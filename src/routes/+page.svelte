@@ -37,8 +37,8 @@
 	<p>If you would like to work with me, feel free to reach out!</p>
 
 	<footer>
-		<a href="https://www.linkedin.com/in/maksbialas/">LinkedIn</a>
-		<a href="https://github.com/maksbialas">GitHub</a>
+		<a href="https://www.linkedin.com/in/maksbialas/" target="_blank">LinkedIn</a>
+		<a href="https://github.com/maksbialas" target="_blank">GitHub</a>
 	</footer>
 </Main>
 
