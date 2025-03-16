@@ -5,7 +5,7 @@
 	import mailIcon from '$lib/icons/mail.svg';
 
 	function email(event: Event) {
-		// event.preventDefault();
+		event.preventDefault();
 		const email = String.fromCharCode(109, 97, 107, 115, 46, 98, 105, 97, 108, 97, 115, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109);
 		window.location.href = 'mailto:' + email;
 	}
