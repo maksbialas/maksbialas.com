@@ -2,7 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<!-- Standard favicon -->
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" sizes="any" />
+		<link rel="icon" href="%sveltekit.assets%/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" href="%sveltekit.assets%/favicon-16x16.png" sizes="16x16" />
+		<!-- Apple Touch Icon -->
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png">
+		<!-- Android Chrome Icons -->
+		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest">
+		<link rel="icon" type="image/png" href="%sveltekit.assets%/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="%sveltekit.assets%/android-chrome-512x512.png" sizes="512x512">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +21,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
+		<title>Maks Białas</title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
