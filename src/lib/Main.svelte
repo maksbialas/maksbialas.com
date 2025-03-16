@@ -12,6 +12,6 @@
 
 <style>
 	main {
-			padding-bottom: 7rem;
+		padding-bottom: 7rem;
 	}
 </style>

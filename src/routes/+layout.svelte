@@ -17,7 +17,6 @@
 			['M']
 		];
 
-		const values = [1, 10, 100, 1000];
 		let roman = '';
 		let i = 0;
 		let year = new Date().getFullYear();
@@ -54,15 +53,15 @@
 
 <style>
 	footer {
-			font-size: .75rem;
-			position: absolute;
-			right: var(--side-margin);
-			bottom: .75rem;
+		font-size: 0.75rem;
+		position: absolute;
+		right: var(--side-margin);
+		bottom: 0.75rem;
 	}
 
-  @media (min-width: 768px) {
-      footer {
-          bottom: 4rem;
-      }
+	@media (min-width: 768px) {
+		footer {
+			bottom: 4rem;
+		}
 	}
 </style>
