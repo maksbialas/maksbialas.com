@@ -11,8 +11,7 @@
 </main>
 
 <style>
-    main {
-        display: flex;
-        flex-direction: column;
-    }
+	main {
+			padding-bottom: 7rem;
+	}
 </style>
