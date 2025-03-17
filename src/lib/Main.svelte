@@ -11,7 +11,7 @@
 </main>
 
 <style>
-	main {
-		padding-bottom: 7rem;
-	}
+    main {
+        grid-area: main;
+    }
 </style>

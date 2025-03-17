@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '$lib/style.css';
 	import Navbar from '$lib/Navbar.svelte';
+	import currentYearRoman from '$lib/currentYearRoman';
 
 	const { children } = $props();
 
@@ -8,60 +9,49 @@
 		['About', '/'],
 		['Contact', '/contact']
 	];
-
-	function currentYearRoman(): string {
-		const romanNumerals = [
-			['I', 'IV', 'V', 'IX'],
-			['X', 'XL', 'L', 'XC'],
-			['C', 'CD', 'D', 'CM'],
-			['M']
-		];
-
-		let roman = '';
-		let i = 0;
-		let year = new Date().getFullYear();
-
-		while (year > 0) {
-			const digit = year % 10;
-			year = Math.floor(year / 10);
-
-			if (digit > 0) {
-				if (digit <= 3) {
-					roman = romanNumerals[i][0].repeat(digit) + roman;
-				} else if (digit === 4) {
-					roman = romanNumerals[i][1] + roman;
-				} else if (digit === 5) {
-					roman = romanNumerals[i][2] + roman;
-				} else if (digit <= 8) {
-					roman = romanNumerals[i][2] + romanNumerals[i][0].repeat(digit - 5) + roman;
-				} else {
-					roman = romanNumerals[i][3] + roman;
-				}
-			}
-			i++;
-		}
-
-		return roman;
-	}
 </script>
 
 <Navbar {links} />
 
 {@render children()}
 
-<footer>{currentYearRoman()} Maksymilian Białas</footer>
+<footer>
+	<div id="footer-links">
+		<a href="https://www.linkedin.com/in/maksbialas/" target="_blank">LinkedIn</a>
+		<a href="https://github.com/maksbialas" target="_blank">GitHub</a>
+	</div>
+	<div id="footer-author">
+		{currentYearRoman()} Maksymilian Białas
+	</div>
+</footer>
 
 <style>
-	footer {
-		font-size: 0.75rem;
-		position: absolute;
-		right: var(--side-margin);
-		bottom: 0.75rem;
-	}
-
-	@media (min-width: 768px) {
 		footer {
-			bottom: 4rem;
+        grid-area: footer;
+				display: flex;
+				margin-bottom: 1rem;
+
+				flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
 		}
-	}
+
+		#footer-author, #footer-links {
+				flex-grow: 1;
+				line-height: 3.5rem;
+		}
+
+		#footer-author {
+				text-align: right;
+				font-size: .75rem;
+		}
+
+    a {
+        padding-left: 0.5rem;
+        padding-bottom: 0.2rem;
+        margin-right: 1rem;
+        border-bottom: 2px solid var(--primary-font-color);
+        text-decoration: none;
+    }
 </style>

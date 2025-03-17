@@ -34,48 +34,44 @@
 </script>
 
 <Main>
-	<h1>Contact</h1>
-	<p>If you'd like to get in touch, feel free to reach out via any of the platforms below:</p>
-	<div id="icons">
-		<a href="." onclick={email}>
-			<img src={mailIcon} alt="Mail icon" />
-		</a>
-		<a href="https://www.linkedin.com/in/maksbialas/" target="_blank">
-			<img src={linkedInIcon} alt="LinkedIn icon" />
-		</a>
-		<a
-			href="https://signal.me/#eu/zs5wkNWwdIxZqKADV30pimc19UVypK2WX7V9S2Hr7ePwmAzYOzJJhY88uaHz7d8n"
-			target="_blank"
-		>
-			<img src={signalIcon} alt="Signal icon" />
-		</a>
+	<div id="contact">
+		<h1>Contact</h1>
+		<p>If you'd like to get in touch, feel free to reach out via any of the platforms below:</p>
+		<div id="icons">
+			<a href="." onclick={email}>
+				<img src={mailIcon} alt="Mail icon" />
+			</a>
+			<a href="https://www.linkedin.com/in/maksbialas/" target="_blank">
+				<img src={linkedInIcon} alt="LinkedIn icon" />
+			</a>
+			<a
+				href="https://signal.me/#eu/zs5wkNWwdIxZqKADV30pimc19UVypK2WX7V9S2Hr7ePwmAzYOzJJhY88uaHz7d8n"
+				target="_blank"
+			>
+				<img src={signalIcon} alt="Signal icon" />
+			</a>
+		</div>
+		<div style:height="12rem"></div>
 	</div>
 </Main>
 
 <style>
-	h1 {
-		margin-top: 2rem;
-	}
-
-	@media (min-height: 1024px) {
-		h1 {
-			margin-top: 20vh;
+		#contact {
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
 		}
-	}
 
-	h1,
-	p {
-		text-align: center;
-	}
+    #icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
 
-	#icons {
-		display: flex;
-		justify-content: center;
-		gap: 1.5rem;
-		margin-top: 1rem;
-
-		img {
-			height: 2rem;
-		}
-	}
+        img {
+            height: 2rem;
+        }
+    }
 </style>
