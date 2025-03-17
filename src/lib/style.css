@@ -10,12 +10,6 @@
 	}
 }
 
-@media (min-width: 1200px) {
-	:root {
-		--side-margin: 8rem;
-	}
-}
-
 html,
 body {
 	background-color: var(--background-color);
