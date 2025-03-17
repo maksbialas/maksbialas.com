@@ -29,10 +29,10 @@
 		footer {
         grid-area: footer;
 				display: flex;
-				margin-bottom: 1rem;
 
 				flex-direction: column;
         @media (min-width: 768px) {
+            margin-bottom: 2rem;
             flex-direction: row;
         }
 		}
