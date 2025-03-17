@@ -51,7 +51,6 @@
 				<img src={signalIcon} alt="Signal icon" />
 			</a>
 		</div>
-		<div style:height="12rem"></div>
 	</div>
 </Main>
 
