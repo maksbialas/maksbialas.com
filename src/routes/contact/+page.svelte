@@ -38,7 +38,7 @@
 		<h1>Contact</h1>
 		<p>If you'd like to get in touch, feel free to reach out via any of the platforms below:</p>
 		<div id="icons">
-			<a href="." onclick={email}>
+			<a href="/contact/email" onclick={email}>
 				<img src={mailIcon} alt="Mail icon" />
 			</a>
 			<a href="https://www.linkedin.com/in/maksbialas/" target="_blank">
