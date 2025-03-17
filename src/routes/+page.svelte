@@ -63,8 +63,9 @@
 
 	#profile-photo-container {
 		grid-area: photo;
+		max-height: 75vh;
 		@media (min-width: 768px) {
-			margin-top: 2rem;
+			margin-top: 1rem;
 		}
 	}
 
@@ -75,10 +76,12 @@
 		margin-right: calc(-1 * var(--side-margin));
 
 		@media (min-width: 768px) {
+      margin-left: auto;
 			margin-right: 0;
 			aspect-ratio: 2 / 3;
 			width: auto;
 			height: auto;
+ 			max-height: 100%;
 		}
 	}
 
