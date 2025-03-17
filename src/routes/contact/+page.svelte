@@ -55,22 +55,22 @@
 </Main>
 
 <style>
-		#contact {
-				box-sizing: border-box;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
+	#contact {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	#icons {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		margin-top: 1rem;
+
+		img {
+			height: 2rem;
 		}
-
-    #icons {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        margin-top: 1rem;
-
-        img {
-            height: 2rem;
-        }
-    }
+	}
 </style>

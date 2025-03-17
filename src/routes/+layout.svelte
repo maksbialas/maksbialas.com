@@ -26,32 +26,33 @@
 </footer>
 
 <style>
-		footer {
-        grid-area: footer;
-				display: flex;
+	footer {
+		grid-area: footer;
+		display: flex;
 
-				flex-direction: column;
-        @media (min-width: 768px) {
-            margin-bottom: 2rem;
-            flex-direction: row;
-        }
+		flex-direction: column;
+		@media (min-width: 768px) {
+			margin-bottom: 2rem;
+			flex-direction: row;
 		}
+	}
 
-		#footer-author, #footer-links {
-				flex-grow: 1;
-				line-height: 3.5rem;
-		}
+	#footer-author,
+	#footer-links {
+		flex-grow: 1;
+		line-height: 3.5rem;
+	}
 
-		#footer-author {
-				text-align: right;
-				font-size: .75rem;
-		}
+	#footer-author {
+		text-align: right;
+		font-size: 0.75rem;
+	}
 
-    a {
-        padding-left: 0.5rem;
-        padding-bottom: 0.2rem;
-        margin-right: 1rem;
-        border-bottom: 2px solid var(--primary-font-color);
-        text-decoration: none;
-    }
+	a {
+		padding-left: 0.5rem;
+		padding-bottom: 0.2rem;
+		margin-right: 1rem;
+		border-bottom: 2px solid var(--primary-font-color);
+		text-decoration: none;
+	}
 </style>

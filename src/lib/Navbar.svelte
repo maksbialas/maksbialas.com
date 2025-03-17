@@ -16,54 +16,56 @@
 </nav>
 
 <style>
-    nav {
-        grid-area: navbar;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-				margin: 1.5rem 0;
-    }
+	nav {
+		grid-area: navbar;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 1.5rem 0;
+	}
 
-    #logo {
-        color: var(--background-color);
-        background-color: var(--primary-font-color);
-        font-family: Libre Baskerville,
-        serif;
-        font-size: 2rem;
-        line-height: 2rem;
-        padding: 0.6rem 0.5rem;
-    }
+	#logo {
+		color: var(--background-color);
+		background-color: var(--primary-font-color);
+		font-family:
+			Libre Baskerville,
+			Georgia,
+			serif;
+		font-size: 2rem;
+		line-height: 2rem;
+		padding: 0.6rem 0.5rem;
+	}
 
-    ul {
-        margin: 0;
-        padding: 0;
-    }
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 
-    li {
-        display: inline-block;
-        margin-left: 1.25rem;
-        position: relative;
+	li {
+		display: inline-block;
+		margin-left: 1.25rem;
+		position: relative;
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -0.25rem;
-            left: -0.5rem;
-            width: 0;
-            height: 2px;
-            background: var(--primary-font-color);
-            transition: width 0.15s ease-in-out;
-        }
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -0.25rem;
+			left: -0.5rem;
+			width: 0;
+			height: 2px;
+			background: var(--primary-font-color);
+			transition: width 0.15s ease-in-out;
+		}
 
-        &.current,
-        &:hover {
-            &::after {
-                width: calc(100% + 0.5rem);
-            }
-        }
-    }
+		&.current,
+		&:hover {
+			&::after {
+				width: calc(100% + 0.5rem);
+			}
+		}
+	}
 
-    a {
-        text-decoration: none;
-    }
+	a {
+		text-decoration: none;
+	}
 </style>

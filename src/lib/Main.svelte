@@ -11,7 +11,7 @@
 </main>
 
 <style>
-    main {
-        grid-area: main;
-    }
+	main {
+		grid-area: main;
+	}
 </style>
