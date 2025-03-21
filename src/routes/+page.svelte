@@ -17,7 +17,7 @@
 			<p>Hi, I'm Maks!</p>
 
 			<p>
-				A fan of Typescript's expressiveness, Rust's thoughtfulness and performance, Scala's purity
+				A fan of TypeScript's expressiveness, Rust's thoughtfulness and performance, Scala's purity
 				and elegance and the strength in simplicity of C.
 			</p>
 
